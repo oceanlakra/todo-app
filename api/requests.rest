@@ -1,0 +1,19 @@
+//displaying the data
+GET http://localhost:3001/todos
+
+###
+//adding data
+GET http://localhost:3001/todo/new
+Content-Type: application/json
+
+{
+    "text": "DO js project"
+}
+
+###
+//deleting data
+DELETE http://localhost:3001/todo/delete/6603e2983412e82a1c052a45
+
+###
+//changing the complete/incomplete status
+PUT http://localhost:3001/todo/update/6603a8db766ed5f8e750a661
